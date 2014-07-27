@@ -2,13 +2,16 @@
 	<p>
 		RESULT:
 	</p>
-
 	<% if @game.winner == "Draw" %>
-		<p> it was a draw </p>
+		<p> It was a draw. </p>
 	 <% elsif @game.winner.name == "computer" %>
 	 	<p>You lost! the computer won with <%= @game.winner.pick %>.</p>
 	<% else %>
-		<p>You won, with <%= @game.winner.pick %> </p>
+		<p>You won, with <%= @game.winner.pick %>! </p>
 	<%end%>
+
+	<form action='/register' method='POST'>
+		<button class='retry'>Retry</button>
+	</form>
 </div>
 

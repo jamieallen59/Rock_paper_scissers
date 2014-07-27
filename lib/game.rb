@@ -28,5 +28,5 @@ class Game
 	def start?
 		@multi_players.count == 2
 	end
-
+	
 end
