@@ -1,8 +1,21 @@
-<h1>Welcome <%= @player%></h1>
+<p class='play'>
+	Welcome to rock paper scissors <%= @player%>.<br></br> 
+	Now, the choice is yours, but remember:<br></br>
+	<em>"It is impossible to gain an advantage over a truly random opponent"</em> 
+	<a class='wikipedia'>Wikipedia 2014.</a>
+</p>
 
 <form action="/play_computer" method="POST">
-	<button name="pick" value="Paper">Paper</button>
-	<button name="pick" value="Rock">Rock</button>
-	<button name="pick" value="Scissors">Scissors</button>
+	<button class='game_buttons' name="pick" value="Rock">Rock</button>
+	<button class='game_buttons' name="pick" value="Paper">Paper</button>
+	<button class='game_buttons' name="pick" value="Scissors">Scissors</button>
 	<input type="hidden" name="name" value=<%= @name %>>
 </form>
+
+
+<div class='play_computer'>
+	<p class='play_computer'>
+		<em class='title'>Did you know?</em><br> 
+			In 2006, American federal judge Gregory Presnell from the Middle District of Florida ordered opposing sides in a lengthy court case to settle a trivial (but lengthily debated) point over the appropriate place for a deposition, by using the game, rock-paper-scissors.
+	</P>
+</div>

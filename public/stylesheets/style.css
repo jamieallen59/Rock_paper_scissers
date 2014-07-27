@@ -5,7 +5,9 @@ body {
 	text-align: center;
 }
 
-/*landing page styling*/
+/*-------------------------*\
+		LANDING
+/*-------------------------*/
 a.landing {
 	box-shadow:inset 0px 1px 0px 0px #f5f5f5;
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d1cfd1), color-stop(1, #969396));
@@ -33,58 +35,17 @@ a.landing:active {
 }
 
 
-/*new_game_single_player styling*/
+/*-------------------------*\
+		NEW_PLAYER_SINGLE
+/*-------------------------*/
 p.name_entry {
-	-webkit-box-shadow: 0px 10px 14px -7px #276873;
-	box-shadow: 0px 10px 14px -7px #276873;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b3b3b3), color-stop(1, #9e9e9e));
-	background-color:#b3b3b3;
-	-webkit-border-radius:8px;
-	border-radius:8px;
-	display:inline-block;
-	color:#ffffff;
-	font-family:arial;
-	font-size:20px;
-	font-weight:bold;
-	padding:13px 32px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #3d768a;
-}
-p.name_entry {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #9e9e9e), color-stop(1, #b3b3b3));
-	background:-webkit-linear-gradient(top, #9e9e9e 5%, #b3b3b3 100%);
-	background-color:#9e9e9e;
-}
-p.name_entry {
-	position:relative;
-	top:1px;
-}
-
-
-button.new_player_single {
-	-webkit-box-shadow:inset 0px 1px 0px 0px #f5f5f5;
-	box-shadow:inset 0px 1px 0px 0px #f5f5f5;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d1cfd1), color-stop(1, #969396));
-	background-color:#d1cfd1;
-	-webkit-border-radius:3px;
+	box-shadow: 0px 10px 14px -7px #687E82;
+	background-color:#C4C4C4;
 	border-radius:3px;
-	border:1px solid #86888a;
 	display:inline-block;
-	color:#ffffff;
-	font-family:arial;
-	font-size:20px;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #7e838a;
-}
-button.new_player_single:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #969396), color-stop(1, #d1cfd1));
-	background:-webkit-linear-gradient(top, #969396 5%, #d1cfd1 100%);
-	background-color:#969396;
-}
-button.new_player_single:active {
-	/*position:relative;*/
-	top:1px;
+	padding:13px 32px;
+	position:relative;
+	top: 10px;
 }
 
 
@@ -93,34 +54,124 @@ input[type=text]	{
     border: none;
     box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset, 0 -1px 0 rgba(0,0,0,0.05) inset;
     transition: all 0.2s linear;
-    font-family: "Helvetica Neue", sans-serif;
-    font-size: 13px;
-    color: #222222;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #444444;
     position: relative;
     height: 36px;
     width: 200px;
-    padding-left: 30px;
-    
-    &::-webkit-input-placeholder {
-       color: #999999;
-    }
-    
-    &:-moz-placeholder {
-       color: #999999;
-    }
-        
-    &:focus{
-        box-shadow: 0 1px 0 #2392F3 inset, 0 -1px 0 #2392F3 inset, 1px 0 0 #2392F3 inset, -1px 0 0 #2392F3 inset, 0 0 4px rgba(35,146,243,0.5);
-        outline: none;
-        background: url(../img/keyIcon.png) 12px 11px no-repeat, #FFF;
-    }
+    padding-left: 26px;
 }
 
 
+button.new_player_single {
+	box-shadow:inset 0px 1px 0px 0px #f5f5f5;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d1cfd1), color-stop(1, #969396));
+	background-color:#d1cfd1;
+	border-radius:3px;
+	border:1px solid #86888a;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:20px;
+	padding:6px 24px;
+	text-decoration:none;
+}
+button.new_player_single:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #969396), color-stop(1, #d1cfd1));
+	background-color:#969396;
+}
+button.new_player_single:active {
+	position:relative;
+	top:1px;
+}
+
+/*-------------------------*\
+		PLAY_COMPUTER
+/*-------------------------*/
+div.play_computer {
+	margin-top: 100px;
+}
+
+p.play {
+	font-size: 20px;
+	text-align: center;
+	color: #444444;
+	padding: 40px;
+	line-height: 100%;
+	font-family: arial;
+	padding: 0px 100px 0px 100px;
+}
+
+a.wikipedia {
+	font-size: 14px;
+}
+
+button.game_buttons {
+	-moz-box-shadow:inset 0px 34px 0px -15px #b54b3a;
+	-webkit-box-shadow:inset 0px 34px 0px -15px #b54b3a;
+	box-shadow:inset 0px 34px 0px -15px #b54b3a;
+	background-color:#a73f2d;
+	border:0.1px solid #241d13;
+	border: none;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: arial;
+	font-size:20px;
+	width: 150px;
+	font-weight:bold;
+	padding: 9px;
+	margin: 50px 10px 10px 10px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #7a2a1d;
+}
+button.game_buttons:hover {
+	background-color:#b34332;
+	border: 0.5px solid #241d13;
+}
+button.game_buttons:active {
+	position:relative;
+	top:1px;
+}
 
 
+p.play_computer {
+	font-family: arial;
+	font-size: 14px;
+	color: #444444;
+	padding: 4px;
+	border: 2px solid #F7F7F7;
+	line-height: 140%;
+	position: absolute;
+	right: 0;
+	text-align: left;
+	max-width: 450px;
+	background-color: #F7F7F7;
+}
 
+em.title {
+	font-family: sans-serif;
+	font-weight: 12px;
+	text-align: justify;
+	text-decoration: bold;
+}
 
+/*-------------------------*\
+		OUTCOMES
+/*-------------------------*/
+
+div.results {
+	background-color: #DEDEDE;
+	font-size: 20px;
+	text-align: center;
+	position: absolute;
+	color: #8A6FA3;
+	padding: 40px;
+	line-height: 100%;
+	font-family: arial;
+	padding: 0px 100px 0px 100px;
+}
 
 
 

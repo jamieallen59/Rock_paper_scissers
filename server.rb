@@ -14,11 +14,11 @@ class RockPaperScissors < Sinatra::Base
     erb :index
   end
 
-  get '/new_game_single_player' do
+  get '/new_player_single' do
   	erb :new_player_single
   end
 
-  get '/new_game_multiplayer' do
+  get '/new_player_multiplayer' do
     erb :new_player_multiplayer
   end
 
